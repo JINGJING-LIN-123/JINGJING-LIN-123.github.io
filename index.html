@@ -1,13 +1,803 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <!--
+      - favicon
+    -->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+    <!--
+      - custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-<header>
-    <h1>Jingjing Lin</h1>
-    <p>Software Engineering</p>
-</header>
+
+<!--
+  - #MAIN
+-->
+
+<main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+        <div class="sidebar-info">
+
+            <figure class="avatar-box">
+                <img src="./assets/images/my-avatar.png" alt="Jingjing Lin" width="80">
+            </figure>
+
+            <div class="info-content">
+                <h1 class="name" title="Jingjing Lin">Jingjing Lin</h1>
+
+                <p class="title">Software Engineer</p>
+            </div>
+
+            <button class="info_more-btn" data-sidebar-btn>
+                <span>Show Contacts</span>
+
+                <ion-icon name="chevron-down"></ion-icon>
+            </button>
+
+        </div>
+
+        <div class="sidebar-info_more">
+
+            <div class="separator"></div>
+
+            <ul class="contacts-list">
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">Email</p>
+
+                        <a href="mailto:lin.jingj@norteastern.edu" class="contact-link">lin.jingj@northeastern.edu</a>
+                    </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="phone-portrait-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">github</p>
+                        <a href="https://github.com/JINGJING-LIN-123" class="contact-link">https://github.com/JINGJING-LIN-123</a>
+                    </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="phone-portrait-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">LinkedIn</p>
+                        <a href="https://www.linkedin.com/in/jingjing-l-aa0083205" class="contact-link">www.linkedin.com/in/jingjing-l-aa0083205</a>
+                    </div>
+
+                </li>
+
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="location-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">Location</p>
+
+                        <address>Santa Clara, California, USA</address>
+                    </div>
+
+                </li>
+
+            </ul>
+
+            <div class="separator"></div>
+
+
+
+        </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+        <!--
+          - #NAVBAR
+        -->
+
+        <nav class="navbar">
+
+            <ul class="navbar-list">
+
+                <li class="navbar-item">
+                    <button class="navbar-link  active" data-nav-link>About</button>
+                </li>
+
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>Resume</button>
+                </li>
+
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>Portfolio</button>
+                </li>
+
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>Blog</button>
+                </li>
+
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link>Contact</button>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <!--
+          - #ABOUT
+        -->
+
+        <article class="about  active" data-page="about">
+
+            <header>
+                <h2 class="h2 article-title">About me</h2>
+            </header>
+
+            <section class="about-text">
+                <p>
+                    I'm an active Master's student pursuing a Computer Science degree at Northeastern University. My solid GPA and diverse skills in Java, Python, C/C++, and more drive my journey. I've showcased my abilities through projects like a pet-centric social network app and a captivating Java-based PC fishing game. My prior roles as an Accountant and Project Coordinator have refined my responsibility, attention to detail, and collaborative coordination skills. The fusion of my studies and professional experiences ignites my passion for innovation. Coding deeply intrigues me—it's a realm of boundless creativity and problem-solving. Crafting code to bring ideas to life and drive technological advancement is exhilarating. I'm fueled by curiosity and excitement, always eager to tackle challenges and explore new coding avenues. This enthusiasm propels my skill growth in the dynamic tech landscape. Connect with me on LinkedIn or email me at lin.jingj@northeastern.edu for collaboration opportunities.
+
+                </p>
+            </section>
+
+        </article>
+
+
+
+
+
+        <!--
+          - #RESUME
+        -->
+
+        <article class="resume" data-page="resume">
+
+            <header>
+                <h2 class="h2 article-title">Resume</h2>
+            </header>
+
+            <section class="timeline">
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3">Education</h3>
+                </div>
+
+                <ol class="timeline-list">
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Northeastern University, Boston, Massachusetts</h4>
+
+                        <span>Master in Computer Science | GPA 4.0/4.0</span>
+                        <span>2007 — 2008</span>
+
+                        <p class="timeline-text">
+                            Accomplished Courses: Intensive Foundations of Computer Science (A), Discrete Structure (A), Object- Oriented Design (A), Data Structure, Algorithms, and Their Applications with Computer Systems (A), Mobile Application Development (A), Algorithms (A). Web Development (A)
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Golden Gate University, San Francisco, California</h4>
+
+                        <span>Master in Business Analysis | GPA: 3.9/4.0</span>
+                        <span>2017 — 2018</span>
+
+                        <p class="timeline-text">
+                            Completed 24 of 36 Credits towards Master in Business Analysis with Scholarship Award Selective Courses: Managing Big Data Frameworks (A), Tools Business Analytics (A).
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">California State University, East Bay, Hayward, California</h4>
+
+                        <span>Bachelor of Science, Business Administration | GPA: 3.5/4.0</span>
+                        <span>2010 — 2014</span>
+
+                        <p class="timeline-text">
+                            Double Major in Accounting and Supply Chain Management
+                        </p>
+
+                    </li>
+
+                </ol>
+
+            </section>
+
+            <section class="timeline">
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3">Experience</h3>
+                </div>
+
+                <ol class="timeline-list">
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Accountant</h4>
+                        <span>E&E Co., Ltd. | Full-time</span>
+
+                        <span>2019 — 2020</span>
+
+                        <div class="timeline-text">
+                            <ul>
+                                <li>- Oversaw accurate month-end closing for financial statements.</li>
+                                <li>- Managed and recorded general ledger entries.</li>
+                                <li>- Provided decision-support reports, including financial analysis.</li>
+                                <li>- Handled weekly cash flow and bank reconciliations for optimal cash management.</li>
+                                <li>- Supported annual audits to ensure compliance with accounting standards.</li>
+                                <li>- Conducted trend and ratio analysis for strategic insights.</li>
+                                <li>- Resolved expense discrepancies and ensured guideline-aligned reimbursements.</li>
+                                <li>- Led IT collaboration for automated accounting, enhancing efficiency, accuracy, and team skills.</li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Project Coordinator</h4>
+
+                        <span>Sync Design, Inc. | Full-time</span>
+                        <span>2014 — 2017</span>
+
+                        <div class="timeline-text">
+                            <ul>
+                            <li>- Supported retail e-commerce for Walmart, Target, Bed Bath & Beyond, and Kohl's, ensuring seamless operations and on-time deliveries.</li>
+                            <li>- Managed cross-cultural projects between China and the US, utilizing proven methodologies for planning, execution, and resource allocation.</li>
+                            <li>- Oversaw image database for marketing and e-commerce.</li>
+                            <li>- Managed demand planning and design schedules.</li>
+                            <li>- Created operational budget and forecast report for finance.</li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+
+
+                </ol>
+
+            </section>
+
+            <section class="skill">
+
+                <h3 class="h3 skills-title">My skills</h3>
+
+
+                <ul class="project-list">
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <img src="./assets/images/java-logo.png" alt="java" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Java</h3>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <img src="./assets/images/python-logo.png" alt="python" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Python</h3>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <img src="./assets/images/c.png" alt="C" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">C/C++</h3>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <img src="./assets/images/r_logo.png" alt="R" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">R</h3>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <img src="./assets/images/sql_logo.png" alt="SQL" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">SQL</h3>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <img src="./assets/images/js_logo.png" alt="js" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">JavaScript</h3>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <img src="./assets/images/Bootstrap.png" alt="Bootstrap" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Bootstrap</h3>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <img src="./assets/images/css.png" alt="css" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">CSS</h3>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <img src="./assets/images/html.png" alt="html" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">HTML</h3>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <img src="./assets/images/jquery.png" alt="jquery" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Jquery</h3>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <img src="./assets/images/json_logo.png" alt="json" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Json</h3>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <img src="./assets/images/node_logo.png" alt="node" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Node</h3>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <img src="./assets/images/react_logo.png" alt="react" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">React</h3>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <img src="./assets/images/redyx_logo.png" alt="redux" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Redux</h3>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <img src="./assets/images/mongoDB.png" alt="mongoDB" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">MongoDB</h3>
+
+                        </a>
+                    </li>
+
+                </ul>
+
+        </article>
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+
+                <button class="modal-close-btn" data-modal-close-btn>
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+
+                <div class="modal-img-wrapper">
+                    <figure class="modal-avatar-box">
+                        <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                    </figure>
+
+                    <img src="./assets/images/icon-quote.svg" alt="quote icon">
+                </div>
+
+                <div class="modal-content">
+
+                    <h4 class="h3 modal-title" data-modal-title> </h4>
+
+                    <time datetime="2021-06-14">14 June, 2021</time>
+
+                    <div data-modal-text>
+                        <p>
+
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+
+        </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--
+          - #PORTFOLIO
+        -->
+
+        <article class="portfolio" data-page="portfolio">
+
+            <header>
+                <h2 class="h2 article-title">Portfolio</h2>
+            </header>
+
+            <section class="projects">
+
+                <ul class="filter-list">
+
+                    <li class="filter-item">
+                        <button class="active" data-filter-btn>All</button>
+                    </li>
+
+                    <li class="filter-item">
+                        <button data-filter-btn>Web design</button>
+                    </li>
+
+                    <li class="filter-item">
+                        <button data-filter-btn>Game design</button>
+                    </li>
+
+                    <li class="filter-item">
+                        <button data-filter-btn>Mobile app development</button>
+                    </li>
+                    <li class="filter-item">
+                        <button data-filter-btn>Others</button>
+                    </li>
+
+                </ul>
+
+                <div class="filter-select-box">
+
+                    <button class="filter-select" data-select>
+
+                        <div class="select-value" data-selecct-value>Select category</div>
+
+                        <div class="select-icon">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </div>
+
+                    </button>
+
+                    <ul class="select-list">
+
+                        <li class="select-item">
+                            <button data-select-item>All</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>Web design</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>Game design</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>Mobile app development</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>Others</button>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <ul class="project-list">
+
+                    <li class="project-item  active" data-filter-item data-category="web design">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-1shopping4pets.jpg" alt="Web design" loading="lazy">
+                            </figure>
+
+                            <a href="https://github.com/JINGJING-LIN-123/-Shopping-Website-Development-for-Pets" class="project-title">Shopping Website Development for Pets</a>
+
+                            <p class="project-category">Web design</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="game design">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-2.png" alt="Game design" loading="lazy">
+                            </figure>
+
+                            <a href="https://github.com/JINGJING-LIN-123/PC-Game-Development-on-Fishing" class="project-title">PC Game Development on Fishing</a>
+
+                            <p class="project-category">Game design</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="mobile app development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-3.jpg" alt="Mobile app development" loading="lazy">
+                            </figure>
+
+                            <a href="https://github.com/JINGJING-LIN-123/Mobile-App-Development-on-Pet-Based-Social-Network" class="project-title">Mobile App Development on Pet-Based Social Network</a>
+
+                            <p class="project-category">Mobile app development</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="others">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-4.png" alt="Others" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Smart Home Monitoring System</h3>
+
+                            <p class="project-category">Others</p>
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </article>
+
+
+
+
+
+        <!--
+          - #BLOG
+        -->
+
+        <article class="blog" data-page="blog">
+
+            <header>
+                <h2 class="h2 article-title">Blog</h2>
+            </header>
+
+
+
+
+
+        </article>
+
+
+
+
+
+        <!--
+          - #CONTACT
+        -->
+
+        <article class="contact" data-page="contact">
+
+            <header>
+                <h2 class="h2 article-title">Contact</h2>
+            </header>
+
+            <section class="mapbox" data-mapbox>
+                <figure>
+                    <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12784.40377255986!2d-121.96237587034977!3d37.35410720384677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb767d3b4ef13%3A0xefd8b1ad31715cc1!2sSanta%20Clara%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+                            width="400" height="300" loading="lazy"></iframe>
+                </figure>
+            </section>
+
+
+
+        </article>
+
+    </div>
+
+</main>
+
+
+
+
+
+
+<!--
+  - custom js link
+-->
+<script src="./assets/js/script.js"></script>
+
+
+<!--
+  - ionicon link
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
 </body>
+
 </html>
